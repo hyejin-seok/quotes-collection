@@ -6,7 +6,6 @@
   box-sizing: border-box;
 }
 
-
 body {
   display: flex;
   justify-content: center;
@@ -209,7 +208,7 @@ h3 {
     justify-content: center;
     padding-bottom: 15px;
   }
-  .quote-content { 
+  .quote-content {
     width: 100%;
   }
   .quote-author {

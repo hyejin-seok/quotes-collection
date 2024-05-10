@@ -1,11 +1,11 @@
-import { Outlet } from "react-router-dom";
+import { Outlet } from 'react-router-dom'
 
 const Quotes = () => {
   return (
     <>
       <Outlet />
     </>
-  );
-};
+  )
+}
 
-export default Quotes;
+export default Quotes

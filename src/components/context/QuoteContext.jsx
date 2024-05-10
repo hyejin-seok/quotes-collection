@@ -1,5 +1,5 @@
-import { createContext } from "react";
+import { createContext } from 'react'
 
-const QuoteContext = createContext();
+const QuoteContext = createContext()
 
-export default QuoteContext;
+export default QuoteContext

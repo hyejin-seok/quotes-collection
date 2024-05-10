@@ -1,0 +1,26 @@
+# Ignore artifacts:
+build
+coverage
+
+# dotfile
+.env*
+
+# markdown
+*.md
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# config
+.eslintrc.cjs
+vite.config.js
+.prettierrc.json
+
+# Common entries
+node_modules
+dist
+*.min.js
