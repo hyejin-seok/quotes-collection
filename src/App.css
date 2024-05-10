@@ -1,42 +1,226 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&family=Varela+Round&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  background: url(./assets/images/books.jpeg) no-repeat center center/cover;
+  color: #fff;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70vw;
+  max-width: 100%;
+  min-width: 360px;
+  padding: 2.5rem 2rem;
+  background-color: rgba(79, 74, 69, 0.9);
+  border-radius: 20px;
+  margin: 70px 0;
+}
+
+h1 {
+  font-family: 'Cormorant Unicase', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-family: 'Cormorant Unicase', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.cite-custom {
+  font-family: sans-serif;
+  font-style: italic;
+}
+
+.button {
+  background-color: #ccab81;
+  border: 0;
+  color: white;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  /* font-size: 1.1rem; */
+}
+
+.button-move {
+  background-color: #a2abab;
+  border: 0;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  font-size: 1.1rem;
+}
+
+.button-move:hover {
+  background-color: #f4f3f3;
+  color: black;
+  transform: scale(1.1);
+}
+
+.button-move:active {
+  background-color: #f4f3f3;
+  color: black;
+}
+
+.button-move.btn:active {
+  background-color: #f4f3f3;
+  color: black;
+}
+
+.button:hover {
+  background-color: #f2eeed;
+  color: black;
+  transform: scale(1.1);
+}
+
+.button:active {
+  background-color: #f2eeed;
+  color: black;
+}
+
+.button.btn:active {
+  background-color: #f2eeed;
+  color: black;
+}
+
+.card-custom {
+  border: 0;
+  text-align: center;
+  background-color: #896e69;
+}
+
+.card-custom-header {
+  background-color: #896e69;
+  font-size: 1rem;
+  border: 0;
+  color: white;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.card-custom-body {
+  background-color: #261f1b;
+  color: white;
+  text-align: center;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.card-custom-footer {
+  background-color: #dac3b3;
+  font-size: 1rem;
+  color: #32404e;
+}
+
+.card-custom-footer-detail-end {
+  border-bottom-left-radius: 15px !important;
+  border-bottom-right-radius: 15px !important;
+}
+
+.custom-link {
+  color: #2b303a;
+  text-decoration: none;
+}
+
+.alert-custom {
+  background-color: #eae2d6;
+  color: #2b303a;
+  border: 0;
+  font-size: 1.2rem;
+  margin: 10px 20px;
+}
+
+.card-custom-header-quote {
+  font-size: 1.3rem;
+  border-radius: 20px;
+}
+
+.card-custom-body-quote {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.card-custom-header-detail {
+  border-radius: 20px;
+}
+
+.collection-custom {
+  background-color: #896e69;
+  color: white;
+  margin: 20px;
+}
+
+.collection-box {
+  background-color: #261f1b;
+  border-radius: 20px;
+}
+
+.button-collection-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+}
+
+.quote-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.quote-content {
+  text-align: left;
+}
+
+.quote-author {
+  text-align: center;
+  font-style: italic;
+  font-family: sans-serif;
+}
+
+.button-custom-collection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  min-width: 50px;
+}
+
+.button-home-custom {
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 779px) {
+  .quote-wrapper {
+    justify-content: center;
+    padding-bottom: 15px;
   }
-  to {
-    transform: rotate(360deg);
+  .quote-content { 
+    width: 100%;
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  .quote-author {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 12px;
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+  .button-custom-collection {
+    margin-left: 8px;
+    margin-right: 8px;
+    max-width: 75px;
+    min-width: 40%;
+  }
 }
