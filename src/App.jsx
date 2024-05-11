@@ -10,6 +10,7 @@ import CollectionContextProvider from './components/context/CollectionContextPro
 
 import Container from 'react-bootstrap/Container'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import './styles/index.css'
 import './App.css'
 
 const App = () => {

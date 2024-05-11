@@ -5,6 +5,7 @@ import Logo from '../../assets/images/favicon.svg'
 
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
+import { FiLoader } from 'react-icons/fi'
 
 const QuotesList = () => {
   const [quotes, setQuotes] = useState([])
@@ -49,7 +50,10 @@ const QuotesList = () => {
         />
       ) : (
         // Render loading state or placeholder
-        <p>Loading...</p>
+        <p className='fs-4'>
+          Loading...
+          <FiLoader className='ms-2' style={{ fontSize: '28px' }} />
+        </p>
       )}
     </Container>
   )

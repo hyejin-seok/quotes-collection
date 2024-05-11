@@ -5,12 +5,15 @@ import CollectionContext from '../context/CollectionContext'
 import ListGroupItem from 'react-bootstrap/ListGroupItem'
 import Button from 'react-bootstrap/Button'
 
+import { FiZoomIn } from 'react-icons/fi'
+import { FiTrash } from 'react-icons/fi'
+
 const CollectionListItem = () => {
   const { collection, onDelete } = useContext(CollectionContext)
   const navigate = useNavigate()
 
   return (
-    <ListGroupItem className='collection-custom p-3' as='li'>
+    <ListGroupItem className='collection-custom p-4' as='li'>
       {collection.map((quote) => (
         <div
           key={quote.id}
@@ -30,13 +33,15 @@ const CollectionListItem = () => {
               navigate(`/collections/${quote.id}`)
             }}
           >
-            Detail
+            VIEW
+            <FiZoomIn className='ms-1 fs-4' />
           </Button>
           <Button
             className='button button-custom-collection col-1 p-2'
             onClick={() => onDelete(quote.id)}
           >
-            Delete
+            DEL
+            <FiTrash className='ms-1 fs-5' />
           </Button>
         </div>
       ))}

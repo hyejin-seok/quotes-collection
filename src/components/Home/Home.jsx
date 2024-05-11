@@ -3,13 +3,15 @@ import { useNavigate } from 'react-router-dom'
 import Button from 'react-bootstrap/Button'
 import Logo from '../../assets/images/favicon.svg'
 
+import { FiSearch } from 'react-icons/fi'
+
 const Home = () => {
   const navigate = useNavigate()
   return (
     <>
-      <div className='d-flex flex-column align-items-center justify-content-center h-auto'>
+      <div className='d-flex flex-column align-items-center justify-content-center'>
         <h1 className='mb-5 text-center'>
-          Quotes Collections&nbsp;
+          Quotes Collection&nbsp;
           <img src={Logo} alt='our logo' />
         </h1>
         <Button
@@ -18,6 +20,7 @@ const Home = () => {
           onClick={() => navigate(`/quotes`)}
         >
           Find Quotes
+          <FiSearch className='ms-2' style={{ fontSize: '24px' }} />
         </Button>
       </div>
     </>

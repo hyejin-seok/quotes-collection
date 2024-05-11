@@ -9,6 +9,10 @@ import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 
+import { FiSkipBack } from 'react-icons/fi'
+import { FiFolderPlus } from 'react-icons/fi'
+import { FiTwitter } from 'react-icons/fi'
+
 const QuoteDetail = () => {
   const { quote, twitter } = useContext(QuoteContext)
   const { addToCollection, alertDismissible, showAlert, setShowAlert } =
@@ -40,7 +44,8 @@ const QuoteDetail = () => {
                 setShowAlert(false)
               }}
             >
-              Go Back
+              Back
+              <FiSkipBack className='ms-2 fs-5' />
             </Button>
             <Button
               className='button mx-2 mb-2 mt-2'
@@ -50,6 +55,7 @@ const QuoteDetail = () => {
               }}
             >
               Save
+              <FiFolderPlus className='ms-2 fs-5' />
             </Button>
             <Button
               className='button mx-2 mb-2 mt-2'
@@ -58,7 +64,8 @@ const QuoteDetail = () => {
                 setShowAlert(false)
               }}
             >
-              X(Tweet)
+              Tweet
+              <FiTwitter className='ms-2 fs-5' />
             </Button>
             {alertDismissible(showAlert)}
           </Card.Body>

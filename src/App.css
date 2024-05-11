@@ -24,10 +24,10 @@ body {
   width: 70vw;
   max-width: 100%;
   min-width: 360px;
+  /* height: 35vh; */
   padding: 2.5rem 2rem;
   background-color: rgba(79, 74, 69, 0.9);
-  border-radius: 20px;
-  margin: 70px 0;
+  border-radius: 15px;
 }
 
 h1 {
@@ -50,16 +50,17 @@ h3 {
 }
 
 .button {
-  background-color: #ccab81;
+  background-color: var(--main-btn-color);
   border: 0;
   color: white;
+  font-weight: 600;
   text-align: center;
   transition: transform 0.3s ease-in-out;
-  /* font-size: 1.1rem; */
+  font-size: 1.1rem;
 }
 
-.button-move {
-  background-color: #a2abab;
+.nav-button {
+  background-color: var(--nav-btn-color);
   border: 0;
   color: white;
   font-weight: 500;
@@ -68,46 +69,46 @@ h3 {
   font-size: 1.1rem;
 }
 
-.button-move:hover {
-  background-color: #f4f3f3;
+.nav-button:hover {
+  background-color: var(--nav-btn-hvr-color);
   color: black;
   transform: scale(1.1);
 }
 
-.button-move:active {
-  background-color: #f4f3f3;
+.nav-button:active {
+  background-color: var(--nav-btn-hvr-color);
   color: black;
 }
 
-.button-move.btn:active {
-  background-color: #f4f3f3;
+.nav-button.btn:active {
+  background-color: var(--nav-btn-hvr-color);
   color: black;
 }
 
 .button:hover {
-  background-color: #f2eeed;
+  background-color: var(--btn-hvr-color);
   color: black;
   transform: scale(1.1);
 }
 
 .button:active {
-  background-color: #f2eeed;
+  background-color: var(--btn-hvr-color);
   color: black;
 }
 
 .button.btn:active {
-  background-color: #f2eeed;
+  background-color: var(--btn-hvr-color);
   color: black;
 }
 
 .card-custom {
   border: 0;
   text-align: center;
-  background-color: #896e69;
+  background-color: var(--card-hd-color);
 }
 
 .card-custom-header {
-  background-color: #896e69;
+  background-color: var(--card-hd-color);
   font-size: 1rem;
   border: 0;
   color: white;
@@ -115,7 +116,7 @@ h3 {
 }
 
 .card-custom-body {
-  background-color: #261f1b;
+  background-color: var(--card-bd-color);
   color: white;
   text-align: center;
 }
@@ -123,7 +124,7 @@ h3 {
 .card-custom-footer {
   background-color: #dac3b3;
   font-size: 1rem;
-  color: #32404e;
+  color: var(--card-ft-hd-color);
 }
 
 .card-custom-footer-detail-end {
@@ -133,7 +134,15 @@ h3 {
 
 .custom-link {
   color: #2b303a;
-  text-decoration: none;
+  color: var(--card-ft-hd-color);
+  /* text-decoration: none; */
+  /* color: var(--card-hd-color); */
+  text-decoration-color: var(--card-ft-hd-color);
+  text-underline-offset: 2px;
+}
+
+.custom-link:hover {
+  color: var(--card-hd-color);
 }
 
 .alert-custom {
@@ -159,13 +168,13 @@ h3 {
 }
 
 .collection-custom {
-  background-color: #896e69;
+  background-color: var(--card-hd-color);
   color: white;
-  margin: 20px;
+  margin: 17px;
 }
 
 .collection-box {
-  background-color: #261f1b;
+  background-color: var(--card-bd-color);
   border-radius: 20px;
 }
 
@@ -196,7 +205,9 @@ h3 {
   justify-content: center;
   align-items: center;
   margin-left: auto;
-  min-width: 50px;
+  margin-right: 10px;
+  min-width: 80px;
+  font-size: 1rem;
 }
 
 .button-home-custom {

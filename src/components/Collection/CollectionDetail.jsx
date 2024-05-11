@@ -10,6 +10,9 @@ import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 
+import { FiSkipBack } from 'react-icons/fi'
+import { FiTwitter } from 'react-icons/fi'
+
 const CollectionDetail = () => {
   const { twitter } = useContext(QuoteContext)
   const { collection } = useContext(CollectionContext)
@@ -44,7 +47,8 @@ const CollectionDetail = () => {
                   navigate(-1)
                 }}
               >
-                Go Back
+                Back
+                <FiSkipBack className='ms-2' />
               </Button>
               <Button
                 className='button mx-3 mb-3 mt-2'
@@ -52,7 +56,8 @@ const CollectionDetail = () => {
                   twitter()
                 }}
               >
-                X(Tweet)
+                Tweet
+                <FiTwitter className='ms-2' style={{ fontSize: '18px' }} />
               </Button>
             </Card.Body>
             <Card.Footer className='card-custom-footer'>

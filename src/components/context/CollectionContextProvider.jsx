@@ -4,6 +4,8 @@ import CollectionContext from './CollectionContext'
 import Alert from 'react-bootstrap/Alert'
 import Button from 'react-bootstrap/Button'
 
+import { FiXSquare } from 'react-icons/fi'
+
 const CollectionContextProvider = ({ children }) => {
   const [collection, setCollection] = useState([])
   const [showAlert, setShowAlert] = useState(false)
@@ -23,12 +25,15 @@ const CollectionContextProvider = ({ children }) => {
   const alertDismissible = () => {
     return (
       <Alert className='alert-custom rounded-4' show={showAlert}>
-        <Alert.Heading className='alert-custom-heading'>Added!</Alert.Heading>
-        <p>The quote is saved in the collection.</p>
+        <Alert.Heading className='alert-custom-heading'>
+          Successfully Added!
+        </Alert.Heading>
+        <p>The quote has been saved in the collection.</p>
         <hr />
         <div className='d-flex justify-content-end'>
-          <Button className='button-move' onClick={() => setShowAlert(false)}>
+          <Button className='nav-button' onClick={() => setShowAlert(false)}>
             Close
+            <FiXSquare className='ms-2 fs-4' />
           </Button>
         </div>
       </Alert>

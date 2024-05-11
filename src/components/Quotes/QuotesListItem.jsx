@@ -8,6 +8,13 @@ import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 
+import { FiRefreshCcw } from 'react-icons/fi'
+import { FiZoomIn } from 'react-icons/fi'
+import { FiFolderPlus } from 'react-icons/fi'
+import { FiTwitter } from 'react-icons/fi'
+import { FiHome } from 'react-icons/fi'
+import { FiFolder } from 'react-icons/fi'
+
 const QuotesListItem = ({ quotes, fetchQuotes }) => {
   const navigate = useNavigate()
   const { twitter } = useContext(QuoteContext)
@@ -36,6 +43,7 @@ const QuotesListItem = ({ quotes, fetchQuotes }) => {
               }}
             >
               New Quote
+              <FiRefreshCcw className='ms-2 fw-bold fs-6' />
             </Button>
             <Button
               className='button mx-2 mb-3'
@@ -45,6 +53,7 @@ const QuotesListItem = ({ quotes, fetchQuotes }) => {
               }}
             >
               View Detail
+              <FiZoomIn className='ms-2 fs-5' />
             </Button>
             <Button
               className='button mx-2 mb-3'
@@ -54,6 +63,7 @@ const QuotesListItem = ({ quotes, fetchQuotes }) => {
               }}
             >
               Save
+              <FiFolderPlus className='ms-2 fs-5' />
             </Button>
             <Button
               className='button mx-2 mb-3'
@@ -62,7 +72,8 @@ const QuotesListItem = ({ quotes, fetchQuotes }) => {
                 setShowAlert(false)
               }}
             >
-              X(Tweet)
+              Tweet
+              <FiTwitter className='ms-2 fs-5' />
             </Button>
             {alertDismissible(showAlert)}
           </Card.Body>
@@ -71,22 +82,24 @@ const QuotesListItem = ({ quotes, fetchQuotes }) => {
 
       <div className='button-collection-div'>
         <Button
-          className='button-move mx-3'
+          className='nav-button mx-3'
           onClick={() => {
             navigate(`/`)
             setShowAlert(false)
           }}
         >
-          Go Home
+          Home
+          <FiHome className='ms-2 fs-5' />
         </Button>
         <Button
-          className='button-move mx-3'
+          className='nav-button mx-3'
           onClick={() => {
             navigate(`/collections`)
             setShowAlert(false)
           }}
         >
-          My Collection
+          Collection
+          <FiFolder className='ms-2 fs-5' />
         </Button>
       </div>
     </Row>

@@ -9,6 +9,8 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
 
+import { FiSkipBack } from 'react-icons/fi'
+
 const Collection = () => {
   const { collection } = useContext(CollectionContext)
   const quoteCount = collection.length
@@ -30,8 +32,9 @@ const Collection = () => {
               <CollectionList />
             </div>
           )}
-          <Button className='button-move mt-4' onClick={() => navigate(-1)}>
-            Go Back
+          <Button className='nav-button mt-4' onClick={() => navigate(-1)}>
+            Back
+            <FiSkipBack className='ms-2' />
           </Button>
         </Col>
       </Row>
