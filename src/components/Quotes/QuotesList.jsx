@@ -37,10 +37,10 @@ const QuotesList = () => {
   return (
     <Container className='text-center'>
       <Row className='mb-3'>
-        <h3>
+        <h2>
           Inspire with our Quotes&nbsp;
-          <img src={Logo} alt='our logo' />
-        </h3>
+          <img src={Logo} alt='logo' className='logo' />
+        </h2>
       </Row>
       {quotes && quotes.id && quotes.originator && quotes.originator.name ? (
         <QuotesListItem

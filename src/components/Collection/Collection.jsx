@@ -20,13 +20,13 @@ const Collection = () => {
     <>
       <Outlet />
       <Row>
-        <Col className='p-1 rounded-4 text-center '>
-          <h3>
-            My Quotes Collection <img src={Logo} alt='our logo' />
-          </h3>
-          <h4>
+        <Col className='rounded-4 d-flex flex-column align-items-center justify-content-center'>
+          <h2>
+            My Quotes Collection <img src={Logo} alt='logo' className='logo' />
+          </h2>
+          <h3 className='mb-4'>
             Total:&nbsp; <strong> {quoteCount} </strong> quotes
-          </h4>
+          </h3>
           {quoteCount > 0 && (
             <div className='collection-box'>
               <CollectionList />

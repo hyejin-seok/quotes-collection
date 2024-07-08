@@ -23,9 +23,9 @@ const QuoteDetail = () => {
   return (
     <Row>
       <Col>
-        <h3 className='text-center mb-3'>
-          Quote Detail <img src={Logo} alt='our logo' />
-        </h3>
+        <h2 className='text-center mb-3'>
+          Quote Detail <img src={Logo} alt='logo' className='logo' />
+        </h2>
         <Card className='card-custom mb-4 rounded-4'>
           <Card.Header className='card-custom-header card-custom-header-detail py-3 rounded-4'>
             <strong>[Key Words]</strong> {keyWords}
