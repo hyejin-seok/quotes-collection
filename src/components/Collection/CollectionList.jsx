@@ -3,7 +3,7 @@ import CollectionListItem from './CollectionListItem'
 
 const CollectionList = () => {
   return (
-    <ListGroup variant='flush' className='rounded-4' as='ul'>
+    <ListGroup variant='flush' className='rounded-3' as='ul'>
       <CollectionListItem />
     </ListGroup>
   )

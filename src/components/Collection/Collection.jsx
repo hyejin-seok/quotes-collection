@@ -20,7 +20,7 @@ const Collection = () => {
     <>
       <Outlet />
       <Row>
-        <Col className='rounded-4 d-flex flex-column align-items-center justify-content-center'>
+        <Col className='d-flex flex-column align-items-center justify-content-center'>
           <h2>
             My Quotes Collection <img src={Logo} alt='logo' className='logo' />
           </h2>

@@ -24,7 +24,7 @@ const CollectionContextProvider = ({ children }) => {
 
   const alertDismissible = () => {
     return (
-      <Alert className='alert-custom rounded-4' show={showAlert}>
+      <Alert className='alert-custom rounded-3' show={showAlert}>
         <Alert.Heading className='alert-custom-heading '>
           Successfully Added!
         </Alert.Heading>
