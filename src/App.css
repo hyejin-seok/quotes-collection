@@ -31,16 +31,26 @@ body {
 
 h1 {
   font-family: 'Cormorant Unicase', serif;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 700;
   letter-spacing: 1px;
 }
 
-h3 {
+h2 {
   font-family: 'Cormorant Unicase', serif;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 700;
   letter-spacing: 1px;
+}
+h3 {
+  font-family: 'Cormorant Unicase', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.logo {
+  width: 50px;
 }
 
 .cite-custom {
@@ -52,20 +62,18 @@ h3 {
   background-color: var(--main-btn-color);
   border: 0;
   color: white;
-  font-weight: 600;
   text-align: center;
   transition: transform 0.3s ease-in-out;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .nav-button {
   background-color: var(--nav-btn-color);
   border: 0;
   color: white;
-  font-weight: 500;
   text-align: center;
   transition: transform 0.3s ease-in-out;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .nav-button:hover {
@@ -205,8 +213,8 @@ h3 {
   align-items: center;
   margin-left: auto;
   margin-right: 10px;
-  min-width: 80px;
-  font-size: 1rem;
+  min-width: 85px;
+  font-size: 15px;
 }
 
 .button-home-custom {
@@ -259,24 +267,36 @@ h3 {
   p {
     font-size: 17px;
   }
+
+  .quote-title {
+    font-size: 18px;
+  }
   .alert-custom {
     font-size: 18px;
     margin: 0;
   }
   .alert-heading {
-    font-size: 19px;
+    font-size: 18px;
     font-weight: 700;
     margin-bottom: 10px;
   }
 
   .button {
-    font-size: 16px;
+    font-size: 14px;
   }
-  .btn {
-    font-size: 16px;
+
+  .nav-button {
+    font-size: 15px;
   }
 
   .collection-custom {
     margin: 15px;
+  }
+
+  .card-custom-header {
+    font-size: 14px;
+  }
+  .card-custom-footer {
+    font-size: 14px;
   }
 }

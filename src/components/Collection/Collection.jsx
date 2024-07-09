@@ -34,7 +34,7 @@ const Collection = () => {
           )}
           <Button className='nav-button mt-4' onClick={() => navigate(-1)}>
             Back
-            <FiSkipBack className='ms-2' />
+            <FiSkipBack className='ms-1 fs-6' />
           </Button>
         </Col>
       </Row>

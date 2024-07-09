@@ -20,7 +20,7 @@ const Home = () => {
           onClick={() => navigate(`/quotes`)}
         >
           Find Quotes
-          <FiSearch className='ms-2' style={{ fontSize: '24px' }} />
+          <FiSearch className='ms-2 ' />
         </Button>
       </div>
     </>

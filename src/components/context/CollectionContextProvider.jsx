@@ -25,10 +25,10 @@ const CollectionContextProvider = ({ children }) => {
   const alertDismissible = () => {
     return (
       <Alert className='alert-custom rounded-4' show={showAlert}>
-        <Alert.Heading className='alert-custom-heading'>
+        <Alert.Heading className='alert-custom-heading '>
           Successfully Added!
         </Alert.Heading>
-        <p>The quote has been saved in the collection.</p>
+        <p className='fs-6'>The quote has been saved in the collection.</p>
         <hr />
         <div className='d-flex justify-content-end'>
           <Button className='nav-button' onClick={() => setShowAlert(false)}>

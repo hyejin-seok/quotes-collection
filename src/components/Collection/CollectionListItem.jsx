@@ -33,15 +33,15 @@ const CollectionListItem = () => {
               navigate(`/collections/${quote.id}`)
             }}
           >
-            VIEW
-            <FiZoomIn className='ms-1 fs-4' />
+            View
+            <FiZoomIn className='ms-1 fs-6' />
           </Button>
           <Button
             className='button button-custom-collection col-1 p-2'
             onClick={() => onDelete(quote.id)}
           >
-            DEL
-            <FiTrash className='ms-1 fs-5' />
+            Delete
+            <FiTrash className='ms-1 fs-6' />
           </Button>
         </div>
       ))}

@@ -52,7 +52,7 @@ const QuotesList = () => {
         // Render loading state or placeholder
         <p className='fs-4'>
           Loading...
-          <FiLoader className='ms-2' style={{ fontSize: '28px' }} />
+          <FiLoader className='ms-2' style={{ fontSize: '24px' }} />
         </p>
       )}
     </Container>

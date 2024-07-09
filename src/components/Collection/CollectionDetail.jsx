@@ -57,7 +57,7 @@ const CollectionDetail = () => {
                 }}
               >
                 Tweet
-                <FiTwitter className='ms-2' style={{ fontSize: '18px' }} />
+                <FiTwitter className='ms-2 fs-6' />
               </Button>
             </Card.Body>
             <Card.Footer className='card-custom-footer'>

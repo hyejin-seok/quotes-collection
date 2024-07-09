@@ -25,7 +25,7 @@ const QuotesListItem = ({ quotes, fetchQuotes }) => {
     <Row>
       <Col>
         <Card className='card-custom-header card-custom-header-quote'>
-          <Card.Header className='p-2'>Quote</Card.Header>
+          <Card.Header className='p-2 quote-title'>Quote</Card.Header>
           <Card.Body className='card-custom-body card-custom-body-quote p-4'>
             <blockquote className='blockquote mb-4'>
               <p> {quotes.content} </p>
@@ -43,7 +43,7 @@ const QuotesListItem = ({ quotes, fetchQuotes }) => {
               }}
             >
               New Quote
-              <FiRefreshCcw className='ms-2 fw-bold fs-6' />
+              <FiRefreshCcw className='ms-1 fs-6' />
             </Button>
             <Button
               className='button mx-2 mb-3'
@@ -53,7 +53,7 @@ const QuotesListItem = ({ quotes, fetchQuotes }) => {
               }}
             >
               View Detail
-              <FiZoomIn className='ms-2 fs-5' />
+              <FiZoomIn className='ms-1 fs-6' />
             </Button>
             <Button
               className='button mx-2 mb-3'
@@ -63,7 +63,7 @@ const QuotesListItem = ({ quotes, fetchQuotes }) => {
               }}
             >
               Save
-              <FiFolderPlus className='ms-2 fs-5' />
+              <FiFolderPlus className='ms-1 fs-6' />
             </Button>
             <Button
               className='button mx-2 mb-3'
@@ -73,7 +73,7 @@ const QuotesListItem = ({ quotes, fetchQuotes }) => {
               }}
             >
               Tweet
-              <FiTwitter className='ms-2 fs-5' />
+              <FiTwitter className='ms-1 fs-6' />
             </Button>
             {alertDismissible(showAlert)}
           </Card.Body>
@@ -89,7 +89,7 @@ const QuotesListItem = ({ quotes, fetchQuotes }) => {
           }}
         >
           Home
-          <FiHome className='ms-2 fs-5' />
+          <FiHome className='ms-1 fs-6' />
         </Button>
         <Button
           className='nav-button mx-3'
@@ -99,7 +99,7 @@ const QuotesListItem = ({ quotes, fetchQuotes }) => {
           }}
         >
           Collection
-          <FiFolder className='ms-2 fs-5' />
+          <FiFolder className='ms-1 fs-6' />
         </Button>
       </div>
     </Row>
