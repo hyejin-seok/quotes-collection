@@ -15,13 +15,16 @@ Built with React and Vite, and styled using Bootstrap CSS, the Quotes Collection
 
 <br/>
 [ New Quote Route ]
-<img width="1420" alt="Screenshot: New Quote Route of quotes collection" src="https://github.com/hyejin-seok/quotes-collection/assets/132785671/9297b3b6-729a-478c-852c-ecb7507febf7">
+
+![quotes-1](https://github.com/hyejin-seok/quotes-collection/assets/132785671/eefc139e-248b-4771-a000-223dfa81abc2)
 <br/>
+
 [ Quote Details Route ]
-<img width="1420" alt="Screenshot: Quote Details Route of quotes collection" src="https://github.com/hyejin-seok/quotes-collection/assets/132785671/34014f94-fafb-43e8-8186-aa90ad4e6414">
+![quotes-2](https://github.com/hyejin-seok/quotes-collection/assets/132785671/885cdcb4-b573-4214-a3a4-a36390387341)
 <br/>
+
 [ Quotes Collection Route ]
-<img width="1420" alt="Screenshot: Quotes Collection Route of quotes collection" src="https://github.com/hyejin-seok/quotes-collection/assets/132785671/92dc3a8a-80f4-453e-a6d3-8610ed32df1c">
+![quotes-3](https://github.com/hyejin-seok/quotes-collection/assets/132785671/7fc995b9-6451-4df7-9dbc-1954baed1052)
 
 ## Features
 
@@ -39,7 +42,7 @@ Built with React and Vite, and styled using Bootstrap CSS, the Quotes Collection
 ## Technologies Used
 - React.js
 - Vite
-- Bootstrap
+- Bootstrap CSS
 - React Router 
 
 ## Setup Instructions
